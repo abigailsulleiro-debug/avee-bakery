@@ -1,54 +1,84 @@
 body {
     font-family: 'Poppins', sans-serif;
-    margin: 0;
-    background-color: #fffaf6;
-    color: #5a4034;
+    margin: 0; /* crea espacio en el exterior del borde de la página*/
+    background-color: #E5D3BF; /*color de fondo a la pagina entera*/
+    color: #5a4034; /*color a la pagina entera*/
 }
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #f2e0d0;
-    padding: 15px 40px;
-    border-bottom: 2px solid #d2b59d;
+    display: flex; /*sirve para alinear y distribuir los elementos internos*/
+    justify-content: space-between; /* lo usas para alinear elementos de forma horizontal*/
+    align-items: center; /*sirve para alinear los elementos de manera central*/
+    background-color: #E5D3BF; /*color de fondo del header*/
+    padding: 15px 40px;/*crea espacio interno entre el contenido y el borde*/
+    border-bottom: 2px solid #c88372;/*color de borde del header*/
 }
 
 h2 {
-    text-align: center;
+ font-family: "Lexend Exa", sans-serif;
+    text-align: center; /*alinea el titulo de manera central*/
+    color: #755e4e; /*le da color al texto*/
 }
 .ci{
- display: flex;
-    justify-content:space-around;
-    gap: 10px;
-    text-decoration: none;
+ display: flex; /*alinea y distribuye los elementos de mi clase*/
+    justify-content:space-around;/*separa los elementos de mi clase al rededor de ella*/
+    gap: 10px; /* define el espacio entre los elementos dentro del contenedor*/
+    list-style: none;/*estilo de lista, ninguno*/
 
 }
 .ci a {
-text-decoration: none;
+text-decoration: none; /*estilo de texto, ninguno*/
+color: #755e4e;/*color de texto*/
 }
 .productos {
-    justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 1000px;
-    margin: 0% auto;
-    gap: 10px;
+    justify-content: space-evenly;/*centra los cont*/
+    display: flex;/*alinea y distribuye los elementos */
+    flex-wrap: wrap;/*determina si los elementos flexibles deben mantenerse en una sola línea o pueden ajustarse y pasar a la siguiente línea si no caben*/
+    max-width: 1000px;/*le da un anchor absoluto a la seccion*/
+    margin: 0% auto;/*crea espacio en el exterior del borde de la página*/
+    gap: 10px;/*define el espacio entre elementos en contenedores de cuadrícula*/
 }
 
 .card {
-    background: #fff;
-    border: 1px solid #ead6c4;
-    border-radius: 10px;
-    padding: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    background: #D9BA9B;/*color de fondo de card*/
+    border: 1px solid #755e4e;/*color de borde de card*/
+    border-radius: 10px;/*le da radio al borde*/
+    padding: 10px;/* crea espacio interior entre el contenido del card*/
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);/*le da sombra a la caja*/
+    width: 300px;/*le da anchor a la card*/
 }
 
 .card img {
-    width: 100%;
+    width: 300px;/*le da anchor definido a la imagen*/
+    height: 300px;/*le da altura definida a la imagen*/
 }
 
 .card h3 {
-    margin: 5px 0px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+    margin: 5px 0px;/* crea espacio en el exterior del borde de la página*/
+    text-transform: uppercase;/*muestre en mayúsculas de forma automática*/
+    letter-spacing: 2px;/*le da espacion defrinido a las letras*/
+}
+footer{
+display: flex; /*sirve para alinear y distribuir los elementos internos*/
+    justify-content: space-between; /* lo usas para alinear elementos de forma horizontal*/
+    align-items: center; /*sirve para alinear los elementos de manera central*/
+    background-color: #E5D3BF; /*color de fondo del header*/
+    padding: 15px 40px;/*crear espacio interno entre el contenido y el borde*/
+    margin-top: 15px;/*genera espacio entre mi footer y el contenido principal*/
+    border-top: 2px solid #c88372;/*color de borde al footer*/
+}
+.contact{
+padding: 0%;
+}
+.contact ul{
+    padding: 0%;
+text-align: left;
+list-style: none;
+}
+.contact a{
+text-decoration: none;
+color: #755e4e
+}
+.rs{
+display: flex;
+justify-content: space-around;
 }
